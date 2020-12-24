@@ -23,7 +23,7 @@ To test a input image, run the following code:
 ```
     python EVAL_FILE_NAME TEST_IMAGE
 ```
-For example, the following code will 
+For example, the following code will return a predicted class of test_image_sunglasses.jpg using the model specified in eval_sunglasses_repaired_net.py file.
 ```
     python eval\eval_sunglasses_repaired_net.py images\test_image_sunglasses.jpg
 ```
@@ -33,7 +33,7 @@ To test mulitple inputs, use ***model_package*** function from any eval.py file.
 # Repair
 To repair models from scratch, use files in the repair directory.
 
-B3 does not have one due to lack of testing data, please use generator with number of prune set to 42, the ***Answer to the Ultimate Question of Life, the Universe, and Everything.***
+\*Note: B3 does not have a repair script due to the lack of testing data. Please use the given generator with number of prune setting to 42, the ***Answer to the Ultimate Question of Life, the Universe, and Everything.***
 
 
 # Dependencies
