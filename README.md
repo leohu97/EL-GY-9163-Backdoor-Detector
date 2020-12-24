@@ -1,10 +1,13 @@
 # EL-GY-9163 Backdoor-Detector
  This is a repo for the final project of EL-GY-9163 Machine Learning for CyberSecurity
 
-# Files
+# Directories and Files
 - ***data*** directory contains necessary dataset
 - ***eval*** directory contains evaluation scripts for 4 repaired networks GoodNets
 - ***GoodNets*** directory contains 4 repaired networks GoodNets
+    - The number in the filename indicates attack success rate for backdoored input and classified success rate for clean input
+        -  ***G1_07_90.h5*** means an approximately 0.7% ASR and 90% CSR.
+        - ***G4_0_054_011_91.h5*** means an approximately 0% ASR for sunglasses, 0.54% ASR for eyebrows, 0.11% ASR for lipstick, and 90% CSR.
 - ***images*** directory contains sample testing images
 - ***models*** directory contains necessary BadNets models
 - ***repair*** directory contains ipynb files used to generate GoodNets
@@ -24,6 +27,13 @@ For example, the following code will
 ```
     python eval\eval_sunglasses_repaired_net.py images\test_image_sunglasses.jpg
 ```
+
+To test mulitple inputs, use ***model_package*** function from any eval.py file.
+
+# Repair
+To repair models from scratch, use files in the repair directory.
+
+B3 does not have one due to lack of testing data, please use generator with number of prune set to 42, the ***Answer to the Ultimate Question of Life, the Universe, and Everything.***
 
 
 # Dependencies
