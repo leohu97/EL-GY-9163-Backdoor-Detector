@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 
 input_data_filename = str(sys.argv[1])
 
-bd_model_filename = "models\sunglasses_bd_net.h5"
-pruned_model_filename = "GoodNets\G1_07_90.h5"
+bd_model_filename = "models/sunglasses_bd_net.h5"
+pruned_model_filename = "GoodNets/G1_07_90.h5"
 
 THRES_CONF = 0.99
 THRES_DETECT = 0.91
